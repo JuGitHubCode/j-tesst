@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="test">
+	<select id="tot_list" parameterType="String" resultType="Integer">
+		select count(sno) from score
+		where subject like "%${_parameter}%"
+	</select>
+	
+	
+	<select id="score_hap" parameterType="String" resultType="Integer">
+		select score from score
+		where subject=#{_parameter}
+	</select>
+	
+	<select id="sno_score" parameterType="String" resultType="score.ScoreVo">
+	select sno, score from score s 
+	where subject=#{_parameter}
+	
+	</select>
+	
+	<select id="e_test" parameterType="String" resultType="score.ScoreVo">
+	select s.sno, s2.id, s2.phone, s2.mName,s2.email from score s join student s2 
+	on s.id = s2.id
+	where s.subject=#{_parameter}
+	</select>
+	
+	
+	<insert id="score_input" parameterType="score.ScoreVo">
+	insert into score(id,nal,subject,score)
+	values(#{id},#{nal},#{subject},#{score})
+	
+	</insert>
+	
+	<update id="score_update" parameterType="score.ScoreVo">
+	update score set score=${score} where sno=${sno} and subject=#{subject}
+	
+	</update>
+	
+	<delete id="score_delete" parameterType="Integer">
+		delete from score where sno=${sno} and subject=#{subject}
+	</delete>
+	
+		
+
+</mapper>

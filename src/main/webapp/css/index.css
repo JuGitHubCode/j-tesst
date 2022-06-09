@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+}
+
+#main{
+	width:1200px; 
+	margin:10px auto;
+	background-color:#abc;
+	min-height:400px;
+}
+
+#header{
+	padding:6px;
+	text-align:right;
+}
+
+
+/* 자손 */
+#main>#top{
+	height:200px;
+	background-color:#cba;
+	position: relative;
+}
+
+#top>#nav{
+	position:absolute;
+	right:4px;
+	bottom:4px;
+}
+#top li{
+	display:inline-block;
+	background-color:#abca;
+	color:#fff;
+	padding:5px 10px;
+	
+}
+
+#main>#top a{
+	text-decoration: none;
+}
+
+#main>#top a:hover{
+	text-decoration: none;
+}
+
+#section{
+	background-color:#fff;
+	
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#top li:hover{
+	cursor:pointer;
+	background-color:#bca;
+	color:#000;
+}
+#footer{
+	height:150px;
+	background-color:#aaa;
+	text-align:center;
+	padding-top:70px;
+	
+}
+
+

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+*{
+	box-sizing: border-box;
+	padding:0px;
+	margin:0px;
+}
+
+#noti_main{
+	border: 2px solid #000;
+	
+	width:100%
+}
+
+
+
+#frm_find{
+	border: 2px solid #f00;
+	
+	background-color: #abc;
+	border-radius: 5px 5px 5px 5px;
+	
+	text-align:right;
+	
+	margin: 10px auto;
+	padding: 10px auto;
+}
+
+
+#frm_input{
+	border:2px solid #000;
+	border-radius: 5px 5px 5px 5px;
+	display: none;
+}
+
+#frm_input label{
+	display: inline-block;
+	width: 75px;
+}
+
+
+#msg{
+	border:2px solid #000;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #abca;
+	
+	text-align: center;
+	
+	margin: 10px auto;
+	padding: 10px auto;
+	
+}
+
+#btns{
+	text-align: center;
+	
+	margin: 10px auto;
+	padding: 10px auto;
+}
+
+
+
+/* //view */
+
+#items{
+	border:2px solid #00f;	
+}
+
+#frm_view{
+	border: 2px solid #aaa;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow:5px 5px #aaaa;
+	background-color: #aaa;
+	
+	width:300px;
+	
+	margin: 10px auto;
+	padding: 10px auto;
+}
+
+@keyframes blink-info{
+	50%{
+		opacity:0%;
+	}
+}
+
+

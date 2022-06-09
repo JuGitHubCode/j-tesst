@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+*{
+	box-sizing:border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.title{
+	font-family: bold;
+	font-size:2.0em;
+	
+}
+
+#score{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	height:100%;
+	margin:10px auto;
+}
+
+#score>#frm_score> label{
+	display:inline-block;
+	width:75px;
+	margin:2px auto;
+	text-align:left;
+}
+
+
+
+
+
+
+/*list*/
+
+#score_list{
+	text-align:center;
+}
+#score_list>#frm_score{
+	text-align: right;
+}
+
+#list>.title{
+	background-color: #000;
+	color:#fff;
+}
+
+#list span{
+	display: inline-block;
+}
+#list .sno{width: 110px;}
+#list .id{width: 110px;}
+#list .mName{width: 80px;}
+#list .sub{width: 90px;}
+#list .score{width: 150px;}
+#list .date{width: 180px;}
+
+
+#list .items>.item:nth-child(5n){
+	border-bottom:1px solid #f00;
+}
+
+#list .items>.item:nth-child(2n){
+	background-color: #abca;
+}
+
+#list .items>.item:hover{
+	background-color:#ddd;
+	cursor:pointer;
+}
+
+#score_list pageing{
+	text-align:center;
+}
+
+#score_list .paging>button{
+	padding:2px 5px;
+	border-radius:9px;
+	border:1px groove #ccc;
+	font-size:8pt
+}
+
+#score_list .paging>button:hover{
+	background-color: #bbb;
+	cursor:pointer;
+}
+
+
+
+/*score_find*/
+
+#score_find{
+	text-align:center;
+}
+#score_find>#frm_score{
+	text-align: right;
+}
+
+#list>.title{
+	background-color: #000;
+	color:#fff;
+}
+
+#list span{
+	display: inline-block;
+}
+#list .sno{width: 110px;}
+#list .id{width: 110px;}
+#list .mName{width: 80px;}
+#list .sub{width: 90px;}
+#list .score{width: 150px;}
+#list .date{width: 180px;}
+
+
+#list .items>.title:nth-child(5n){
+	border-bottom:1px solid #f00;
+}
+
+#list .items>.title:nth-child(2n){
+	background-color: #abca;
+}
+
+#list .items>.title:hover{
+	background-color:#ddd;
+	cursor:pointer;
+}
+
+
