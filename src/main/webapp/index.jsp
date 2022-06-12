@@ -28,7 +28,7 @@
 					<li><a href="index.jsp?inc=product/product_main.jsp">생산관리</a></li>
 					<li><a href="index.jsp?inc=purchase/purcahse_main.jsp">구매관리</a></li>
 					<li><a href="index.jsp?inc=noti/noti_main.jsp">공지사항</a></li>
-					<li>게시판관리</li>				
+					<li><a href="board.do">게시판관리</a></li>				
 				</ul>
 			</nav>
 			<div id="ci"></div>

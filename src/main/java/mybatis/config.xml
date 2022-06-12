@@ -18,6 +18,7 @@
 	
 	<mappers>
 		<mapper resource="mybatis/noti.xml"/>
+		<mapper resource="mybatis/board.xml"/>
 		<!-- <mapper resource="mybatis/Product.xml"/> -->
 		<!-- <mapper resource="mybatis/parts.xml"/> -->
 		<!-- <mapper resource="mybatis/test.xml"/> -->
