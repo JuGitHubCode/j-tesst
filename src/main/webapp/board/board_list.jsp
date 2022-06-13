@@ -19,7 +19,7 @@
 			<input type="search" name="findStr" value="${param.findStr }">
 			<button type="button" onclick="board.find(this.form)">조회</button>
 			<input type="text" name="nowPage" value="${param.nowPage }">
-			<input type="text" name="sno">
+			<input type="text" name="sno" value="test!!!!">
 		</form> 
 		<div class="title">
 			<span class="sno">sno</span>
